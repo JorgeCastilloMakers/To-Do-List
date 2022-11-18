@@ -37,3 +37,11 @@
         }
     }
 }
+@media (max-width: 567px){
+    .card{
+
+        &__btn{
+            width: 40%;
+        }
+    }
+}
