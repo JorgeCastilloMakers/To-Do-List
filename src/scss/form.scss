@@ -1,0 +1,48 @@
+.wrapper__form{
+    width: 40%;
+    height: 30%;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    &__title{
+        align-self: flex-start;
+        margin-left: 5%;
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    &__btn{
+        &:hover{
+            background-color: rgb(228, 107, 59);
+        }
+        background-color: rgb(233, 67, 2);
+        border-radius: 5px;
+        width: 20%;
+        height: 20%;
+        font-size: 25px;
+        color: rgb(177, 245, 245);
+        align-self: flex-end;
+        margin-right: 5%;
+    }
+
+
+}
+
+@media (max-width: 867px){
+    .wrapper__form{
+        width: 80%;
+        height: 90%;
+    
+    }
+}
+@media (max-width: 667px){
+    .wrapper__form{
+        width: 90%;
+        height: 90%;
+    
+    }
+}
