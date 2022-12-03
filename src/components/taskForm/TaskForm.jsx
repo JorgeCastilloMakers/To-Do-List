@@ -1,7 +1,7 @@
 import {useContext, useState, useRef, useEffect} from 'react'
-import {TaskContext} from '../context/TaskContext'
-import { tasks } from '../data/task';
-import '../scss/form.scss'
+import {TaskContext} from '../../context/TaskContext'
+import { tasks } from '../../data/task';
+import '../taskForm/form.scss'
 
 
 function TaskForm() {
@@ -13,7 +13,7 @@ function TaskForm() {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(title.length <= 1 || description.length <= 1){
+        if(title.length <= 0 || description.length <= 0){
             
             alert("Please, complete all the fields");
             return

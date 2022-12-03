@@ -1,6 +1,6 @@
 import {useContext} from 'react'
-import {TaskContext} from '../context/TaskContext'
-import '../scss/card.scss'
+import {TaskContext} from '../../context/TaskContext'
+import '../taskCard/card.scss'
 
 
 function TaskCard({ task }) {
