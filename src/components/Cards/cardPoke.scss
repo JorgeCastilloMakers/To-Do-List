@@ -1,0 +1,50 @@
+.card_poke{
+    background-color: rgba(240, 248, 255, 0.822);
+    width: 25%;
+    height: 100%;
+    min-height: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    left: 0%;
+    overflow: hidden;
+    box-shadow: 4px 5px 1px -1px rgba(238, 130, 6, 0.75);
+        &_id{
+            position: absolute;
+            z-index: 0;
+            font-size: 120px;
+            transform: rotateZ(-45deg);
+            font-style: italic;
+            color: rgba(0, 0, 0, 0.801);
+            font-weight: 800;
+            left: -20%;
+            bottom: 50%;
+            
+        }
+        &_name{
+            font-size: 45px;
+            color: rgb(91, 97, 3);
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            position: absolute;
+            z-index: 2;
+            top: 60%;
+            right: 5%;
+        }
+        &_type{
+            font-size: 25px;
+            color: rgb(24, 26, 1);
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            position: absolute;
+            z-index: 2;
+            top: 70%;
+            right: 5%;
+        }
+}
