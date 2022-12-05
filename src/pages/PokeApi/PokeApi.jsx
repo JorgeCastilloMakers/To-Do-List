@@ -44,7 +44,7 @@ export const PokeApi = () => {
         {isLoading && <PokeLoader></PokeLoader>}
         {isError && <h2 style={{color:'red', textAlign: 'center' } }>Sorry we can't find it
         <img src="https://i.gifer.com/XF7w.gif" style={{
-          borderRadius: '50%', width:'12%', height:'160px',objectFit:'cover'}}/> </h2>}
+          borderRadius: '50%', width:'40%', height:'160px',objectFit:'cover'}}/> </h2>}
         {data?.data && <Card key={data?.data.id} {...data?.data} />}
       </div>
     </>
