@@ -7,7 +7,7 @@ const Modal = styled.div`
     height: 30%;
     position: absolute;
     background-color: #fafafa;
-    top:30%;
+    top:35%;
     left:35%;
     display: ${(props) => (props.display ? "flex" : "none")};
     justify-content: center;
@@ -22,6 +22,11 @@ const Modal = styled.div`
 const MessageH2 = styled.h2`
     font-size: 20px;
     color: #000; 
+    display: flex;
+    flex-direction: column;
+    justifify-content: center;
+    align-items: center;
+    text-align: center;
 `;
 const BtnClose = styled.button`
     background-color: #FA5A5A;  

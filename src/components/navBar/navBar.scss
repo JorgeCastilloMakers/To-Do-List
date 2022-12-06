@@ -1,0 +1,21 @@
+.nav{
+    z-index: 50;
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fafafa;
+        &__logo{
+            color: #fafafa;
+            font-size: 30px;
+        }
+        &__list{
+            z-index: 50;
+            display: flex;
+            width: 20%;
+            justify-content: space-between;
+            align-items: center;
+        }
+}

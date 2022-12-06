@@ -5,6 +5,7 @@ import {useQuery} from "react-query"
 import { Card } from "../../components/Cards/Card"
 import { PokeLoader } from "../../components/loader/PokeLoader"
 import "./pokeApi.scss"
+import ImgMessage from "../../components/imgMessage/ImgMessage"
 
   const fetchPokes = (number) => {
     if(!number.queryKey[1]){
@@ -39,12 +40,10 @@ export const PokeApi = () => {
             <button className="pokeapi_btn" onClick={ refetch}>Search</button>
         </div>
 
-        {number === ""  && <ModalMessage >Please choose a number</ModalMessage>}
-        {number < 0  && <ModalMessage >You can´t choose a number less than zero</ModalMessage>}
+        {number === ""  && <ModalMessage ><ImgMessage props={"https://i.pinimg.com/originals/7a/8e/54/7a8e54dc938227a34c6779bf5a0dee46.gif"}/>Please choose a number</ModalMessage>}
+        {number < 0  && setNumber("")}
         {isLoading && <PokeLoader></PokeLoader>}
-        {isError && <h2 style={{color:'red', textAlign: 'center' } }>Sorry we can't find it
-        <img src="https://i.gifer.com/XF7w.gif" style={{
-          borderRadius: '50%', width:'40%', height:'160px',objectFit:'cover'}}/> </h2>}
+        {isError && <ModalMessage><ImgMessage props={"https://i.gifer.com/XF7w.gif"}/>Sorry we can't find it </ModalMessage> }
         {data?.data && <Card key={data?.data.id} {...data?.data} />}
       </div>
     </>
