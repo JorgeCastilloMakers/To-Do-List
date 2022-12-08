@@ -33,8 +33,7 @@ export function TaskContextProvider(props) {
        function existingTask(title){
            const filteringTask = tasks.find(task => task.title === title);
         if(filteringTask[0].title === title){
-            console.log(filteringTask[0].title)
-            return true
+            return filteringTask
         }
         
     
