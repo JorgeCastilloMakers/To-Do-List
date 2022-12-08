@@ -48,3 +48,20 @@
             right: 5%;
         }
 }
+
+@media (max-width: 768px) {
+    .card_poke{
+        width: 50%;
+            &_name{
+                top: 70%;
+            }
+            &_type{
+                top: 80%;
+            }
+    }
+}
+@media (max-width: 667px) {
+    .card_poke{
+        width: 90%;
+    }
+}

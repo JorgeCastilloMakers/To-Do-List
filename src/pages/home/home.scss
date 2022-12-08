@@ -34,6 +34,12 @@
         align-items: center;
 
     }
+    &__description_icons_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     &__description{
         font-size: 25px;
     }
@@ -41,4 +47,41 @@
   
 .logos{
     max-width: 150px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        &__pic{
+            max-width: 55%;
+        }
+        &__subtitle{
+            font-size: 40px;
+            align-self: unset;
+        }
+        &__description_icons_box{
+            flex-wrap: wrap;
+    
+        }
+        &__description{
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 667px) {
+    .home {
+        &__pic{
+            max-width: 65%;
+        }
+        &__title{
+            font-size: 50px;
+        }
+        &__subtitle{
+            font-size: 30px;
+            align-self: unset;
+        }
+        &__description{
+            font-size: 16px;
+        }
+    }
 }

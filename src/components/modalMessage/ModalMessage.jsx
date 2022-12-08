@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import { useState } from 'react';
 
 
+export const wide768 = `@media screen and (max-width: 768px)`;
+export const wide667 = `@media screen and (max-width: 667px)`;
+
 const Modal = styled.div`
     width: 30%;
     height: 30%;
@@ -16,6 +19,17 @@ const Modal = styled.div`
     gap: 30px;
     border-radius: 20px;
     box-shadow: 4px 5px 1px -1px rgba(189,239,252,0.75);
+        ${wide768}{
+            width: 50%;
+            left: 25%;
+            height: 35%;
+        }
+        ${wide667}{
+            width: 70%;
+            height: 35%;
+            top: 50%;
+            left: 15%;
+        }
     
 
 `;

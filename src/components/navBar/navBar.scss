@@ -14,8 +14,32 @@
         &__list{
             z-index: 50;
             display: flex;
-            width: 20%;
+            width: 30%;
             justify-content: space-between;
             align-items: center;
         }
+
+            
+
+}
+
+@media (max-width: 768px) {
+    .nav{
+        flex-direction: column;
+        &__logo{
+            font-size: 25px;
+        }
+        &__list{
+            width: 80%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+}
+@media (max-width: 667px) {
+    .nav{
+        &__list{
+            width: 90%;
+        }
+    }
 }

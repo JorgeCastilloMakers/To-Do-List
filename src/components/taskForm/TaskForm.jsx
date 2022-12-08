@@ -13,16 +13,16 @@ function TaskForm() {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(title.length <= 0 || description.length <= 0){
-            
-            alert("Please, complete all the fields");
-            return
+            if(title.length <= 0 || description.length <= 0){
+                alert("Please, complete all the fields");
+                return
+            }
 
-        };
-        createTask({
+            {tasks.filter(task => task.title === title) ? alert("The task already exist") :  createTask({
             title,
             description
-        });
+        }); }
+
         setTitle('');
         setDescription('')
 
