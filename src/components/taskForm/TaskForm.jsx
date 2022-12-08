@@ -18,7 +18,7 @@ function TaskForm() {
                 return
             }
 
-            {existingTask(title).length > 0 ? createTask({
+            {existingTask(title).title === title ? createTask({
             title,
             description
         }) : alert("The task already exist"); }
