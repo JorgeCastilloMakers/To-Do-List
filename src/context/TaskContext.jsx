@@ -33,8 +33,8 @@ export function TaskContextProvider(props) {
        function existingTask(title){
            const filteringTask = tasks.filter(task => task.title === title);
         if(filteringTask[0].title === title){
-          alert("This task already exist");
-            return
+            console.log(filteringTask[0].title)
+            return true
         }
         
     
