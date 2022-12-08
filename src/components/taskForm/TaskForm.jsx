@@ -13,6 +13,7 @@ function TaskForm() {
     
     const handleSubmit = (e) => {
         e.preventDefault();
+            console.log(tasks);
             if(title.length <= 0 || description.length <= 0){
                 alert("Please, complete all the fields");
                 return
