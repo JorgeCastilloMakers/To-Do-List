@@ -9,7 +9,8 @@ function TaskForm() {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const {createTask, existingTask, tasksList} = useContext(TaskContext)
-
+    console.log(tasks)
+        console.log(tasksList)
     
     const handleSubmit = (e) => {
         e.preventDefault();
