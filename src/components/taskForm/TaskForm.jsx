@@ -17,7 +17,7 @@ function TaskForm() {
                 alert("Please, complete all the fields");
                 return
             }
-
+            {console.log(tasks.find(task => task.title === title)}
             {(tasks.find(task => task.title === title)) === true ? alert("The task already exist") :  createTask({
             title,
             description
