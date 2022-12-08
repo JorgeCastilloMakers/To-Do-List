@@ -18,7 +18,7 @@ function TaskForm() {
                 return
             }
 
-            {existingTask(title) ? alert("The task already exist") :  createTask({
+            {existingTask(title)=== true ? alert("The task already exist") :  createTask({
             title,
             description
         }); }
