@@ -8,20 +8,17 @@ function TaskForm() {
         
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
-    const {createTask, tasks} = useContext(TaskContext)
+    const {createTask, existingTask} = useContext(TaskContext)
 
     
     const handleSubmit = (e) => {
         e.preventDefault();
-            console.log(tasks);
             if(title.length <= 0 || description.length <= 0){
                 alert("Please, complete all the fields");
                 return
             }
-            
-            let titleFind = tasks.find(task => task.title === title);
-            {console.log(titleFind)}
-            {(tasks.find(task => task.title === title)) === true ? alert("The task already exist") :  createTask({
+
+            {existingTask(title) ? alert("The task already exist") :  createTask({
             title,
             description
         }); }
