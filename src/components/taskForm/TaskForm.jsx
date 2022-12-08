@@ -18,10 +18,10 @@ function TaskForm() {
                 return
             }
 
-            {existingTask(title).length > 0 ? alert("The task already exist") :  createTask({
+            {existingTask(title).length > 0 ? createTask({
             title,
             description
-        }); }
+        }) : alert("The task already exist"); }
 
         setTitle('');
         setDescription('')
