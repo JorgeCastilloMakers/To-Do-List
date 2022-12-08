@@ -18,7 +18,7 @@ function TaskForm() {
                 return
             }
 
-            {tasks.filter(task => task.title === title) ? alert("The task already exist") :  createTask({
+            {tasks.find(task => task.title === title) ? alert("The task already exist") :  createTask({
             title,
             description
         }); }
