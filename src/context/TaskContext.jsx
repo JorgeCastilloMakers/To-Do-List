@@ -30,14 +30,6 @@ export function TaskContextProvider(props) {
         }else{
             return
         }
-       function existingTask(title){
-           const filteringTask = tasks.find(task => task.title === title);
-        if(filteringTask[0].title === title){
-            return filteringTask
-        }
-        
-    
-      }
 
 
 
@@ -46,11 +38,10 @@ export function TaskContextProvider(props) {
         tasks,
         deleteTask,
         createTask,
-        existingTask
     }}>
         {props.children}
     </TaskContext.Provider>
   )
 }
-
-export default TaskContext
+}
+export default TaskContextProvider
