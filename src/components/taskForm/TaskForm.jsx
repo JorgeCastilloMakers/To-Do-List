@@ -19,11 +19,8 @@ function TaskForm() {
                 alert("Please, complete all the fields.");
                 return
             }
-            if(tasks.some((task) => task.title === title)){
-                alert("The task already exist.");
-                return
-            }    
-            createTask({
+            
+            {(tasks.some(task => task.title === title)) === true ? alert("The task already exist") :  createTask({
             title,
             description
                 }) ;
@@ -59,5 +56,5 @@ function TaskForm() {
 
   )
 }
-
+}
 export default TaskForm
