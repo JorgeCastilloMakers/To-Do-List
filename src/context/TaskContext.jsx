@@ -30,6 +30,9 @@ export function TaskContextProvider(props) {
         }else{
             return
         }
+        
+    
+      }
 
 
 
@@ -37,11 +40,11 @@ export function TaskContextProvider(props) {
     <TaskContext.Provider value={{
         tasks,
         deleteTask,
-        createTask,
+        createTask
     }}>
         {props.children}
     </TaskContext.Provider>
   )
 }
-}
-export default TaskContextProvider
+
+export default TaskContext
