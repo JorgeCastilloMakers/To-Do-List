@@ -16,11 +16,11 @@ function TaskForm() {
                 console.log("tasks ==>", tasks)
             
             if(title.length <= 0 || description.length <= 0){
-                alert("Please, complete all the fields");
+                alert("Please, complete all the fields.");
                 return
             }
             if(tasks.some((task) => task.title === title)){
-                alert("The task already exist");
+                alert("The task already exist.");
                 return
             }    
             createTask({
