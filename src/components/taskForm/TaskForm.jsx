@@ -15,11 +15,11 @@ function TaskForm() {
         e.preventDefault();
             console.log(tasks);
             if(title.length <= 0 || description.length <= 0){
-                alert("Please, complete all the fields");
+                alert("Please, complete all the fields.");
                 return
             }
             
-            {(tasks.some(task => task.title === title)) === true ? alert("The task already exist") :  createTask({
+            {(tasks.some(task => task.title === title)) === true ? alert("The task already exist.") :  createTask({
             title,
             description
         }); }
